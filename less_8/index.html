@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <link href="style/style.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
 </head>
 <body>
 <header class="header">
-    <div class="header-top">
+    <div class="header-top wrapper">
         <div class="logo">
             <a href="#">
                 <span class="logo-icon">🎁</span>
@@ -22,10 +22,9 @@
                 <li><a href="#">Контакти</a></li>
             </ul>
         </nav>
-        <div class="header-top-btn">
-<!--            svg incorrect-->
-            <button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-10 rounded-md px-6 has-[&gt;svg]:px-4 bg-white text-purple-600 hover:bg-gray-100 w-full sm:w-auto">Переглянути каталог</button>
-            <button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-10 rounded-md px-6 has-[&gt;svg]:px-4 border-white text-white hover:bg-white/10 w-full sm:w-auto">Дізнатися більше</button>
+        <div class = "header-top-btn">
+            <button><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search h-5 w-5"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg></button>
+            <button><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart h-5 w-5"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg></button>
         </div>
     </div>
     <div class="header-bottom">
@@ -33,13 +32,14 @@
         <p>Відкрийте для себе широкий вибір оригінальних подарунків та сувенірів ручної роботи</p>
         <div class="header-bottom-btn">
             <button>Переглянути каталог</button>
-            <button>Дізнатися більше</button>
+            <button id="btn-hover">Дізнатися більше</button>
         </div>
     </div>
 </header>
 <main>
     <section class="advantages">
         <article>
+<!--            огорнути свджі в спен-->
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gift h-8 w-8 text-purple-600"><rect x="3" y="8" width="18" height="4" rx="1"></rect><path d="M12 8v13"></path><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"></path><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"></path></svg>
             <h3>Унікальні товари</h3>
             <p>Ексклюзивні сувеніри ручної роботи</p>
@@ -72,12 +72,11 @@
                     <span class ="instock">В наявності</span>
                 </div>
                 <button class="card-btn">
-<!--                    svg-->
-                    <span>Додати в кошик</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart mr-2 h-4 w-4"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>                    <span>Додати в кошик</span>
                 </button>
             </article>
             <article class="card">
-                <img src="images/catalog1.jfif">
+                <img src="images/catalog2.jfif">
                 <span class="label">Аксесуари</span>
                 <h3>Брелок ручної роботи</h3>
                 <p>Стильний брелок з натуральних матеріалів</p>
@@ -86,12 +85,11 @@
                     <span class ="instock">В наявності</span>
                 </div>
                 <button class="card-btn">
-<!--                    svg-->
-                    <span>Додати в кошик</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart mr-2 h-4 w-4"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>                    <span>Додати в кошик</span>
                 </button>
             </article>
             <article class="card">
-                <img src="images/catalog1.jfif">
+                <img src="images/catalog3.jfif">
                 <span class="label">Декор</span>
                 <h3>Магніт на холодильник</h3>
                 <p>Декоративний магніт з міськими пейзажами</p>
@@ -100,12 +98,11 @@
                     <span class ="instock">В наявності</span>
                 </div>
                 <button class="card-btn">
-<!--                    svg-->
-                    <span>Додати в кошик</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart mr-2 h-4 w-4"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>                    <span>Додати в кошик</span>
                 </button>
             </article>
             <article class="card">
-                <img src="images/catalog1.jfif">
+                <img src="images/catalog4.jfif">
                 <span class="label">Текстиль</span>
                 <h3>Декоративна подушка</h3>
                 <p>М'яка подушка з оригінальною вишивкою</p>
@@ -114,12 +111,75 @@
                     <span class ="instock">В наявності</span>
                 </div>
                 <button class="card-btn">
-<!--                    svg-->
-                    <span>Додати в кошик</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart mr-2 h-4 w-4"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>                    <span>Додати в кошик</span>
                 </button>
             </article>
         </div>
+        <button>Переглянути всі товари</button>
+    </section>
+    <section class="send">
+        <h2>Шукаєте особливий подарунок?</h2>
+        <p>Наші експерти допоможуть вам обрати ідеальний сувенір для будь-якої події</p>
+        <button>Зв'язатися з нами</button>
     </section>
 </main>
+<footer>
+    <div class="footer-top">
+        <article class="column">
+            <div class="logo">
+                <a href="#">
+                    <span class="logo-icon">🎁</span>
+                    <span class="logo-title">Світ Сувенірів</span>
+                </a>
+            </div>
+            <p>Унікальні сувеніри для особливих моментів. Ми створюємо спогади, які залишаються назавжди.</p>
+            <div class="social">
+                <ul>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook h-5 w-5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram h-5 w-5"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter h-5 w-5"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg></a></li>
+                </ul>
+            </div>
+        </article>
+        <article class="column">
+            <h3>Швидкі посилання</h3>
+            <ul>
+                <li><a href="#"></a>Каталог товарів</li>
+                <li><a href="#"></a>Про нас</li>
+                <li><a href="#"></a>Контакти</li>
+                <li><a href="#"></a>Доставка та оплата</li>
+            </ul>
+        </article>
+        <article class="column">
+            <h3>Категорії</h3>
+            <ul>
+                <li><a href="#"></a>Посуд</li>
+                <li><a href="#"></a>Аксесуари</li>
+                <li><a href="#"></a>Декор</li>
+                <li><a href="#"></a>Текстиль</li>
+            </ul>
+        </article>
+        <article class="column">
+            <h3>Контакти</h3>
+            <ul>
+                <li><a href="#">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin h-5 w-5 flex-shrink-0 mt-0.5"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg></span>
+                    <span>вул. Хрещатик, 1<br>Київ, Україна</span>
+                </a></li>
+                <li><a href="tel: +380 44 123 4567">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone h-5 w-5 flex-shrink-0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span>
+                    <span>+380 44 123 4567</span>
+                </a></li>
+                <li><a href="mailto:info@souvenirs.ua">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail h-5 w-5 flex-shrink-0"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></span>
+                    <span>info@souvenirs.ua</span>
+                </a></li>
+            </ul>
+        </article>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Світ Сувенірів. Всі права захищені.</p>
+    </div>
+</footer>
 </body>
 </html>
