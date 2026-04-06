@@ -254,3 +254,125 @@ nav ul a:hover{
 .catalog > button:hover{
     background: #801cb6;
 }
+
+.send {
+    background-color: #a527ed;
+    color: #ffffff;
+    text-align: center;
+
+    padding: 70px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
+
+.send h2 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.send p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.send button {
+    background-color: #ffffff;
+    color: #a527ed;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.send button:hover {
+    background-color: #f4e8ff;
+}
+
+
+footer {
+    background-color: #101727;
+    color: #a1a8a7;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+    gap: 30px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+}
+
+.column .logo {
+    margin-bottom: 15px;
+}
+
+.column .logo a {
+    color: #ffffff;
+}
+
+.column > p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #9ca3af;
+    margin-bottom: 20px;
+}
+
+
+.column .social ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+}
+
+.social ul li a {
+    color: #9ca3af;
+    display: flex;
+}
+
+
+.column h3 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.column ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.column ul li {
+    font-size: 14px;
+    color: #d1d5db;
+}
+
+.column ul li a {
+    color: #d1d5db;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 12px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #1f2937;
+    padding: 24px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #9ca3af;
+    font-size: 14px;
+}
